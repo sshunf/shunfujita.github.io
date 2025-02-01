@@ -44,12 +44,12 @@
 }
 
 .nav-link {
-  color: #6f9884; 
+  color: #436354b0; 
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav-link:hover {
-  color: #618172;
+  color: #31463cb0;
 }
