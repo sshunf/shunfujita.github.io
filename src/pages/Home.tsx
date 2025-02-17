@@ -1,8 +1,12 @@
+import Animation from "./Animation";
+
 function Home() {
     return (
-        <div>
-            <h2>Hello, this is Home</h2>
-        </div>
+        <Animation>
+            <div>
+             <img src={"src/images/lakefill.jpg"} alt="northwestern lakefill"></img>
+            </div>
+        </Animation>
     )
 }
 

@@ -1,6 +1,10 @@
+import Animation from "./Animation";
+
 function Contact() {
     return (
-        <h2>Contact</h2>
+        <Animation>
+            <h2>Contact</h2>
+        </Animation>
     )
 }
 
