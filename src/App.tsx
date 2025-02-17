@@ -1,9 +1,14 @@
 import './App.css';
 import NavBar from './components/navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
 
 function App() {
   const navLinks = [
+    { name: 'HOME', path: '/' },
     { name: 'ABOUT', path: '/about' },
     { name: 'EXPERIENCE', path: 'experience'},
     { name: 'CONTACT', path: 'contact'},
@@ -12,23 +17,18 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar links={navLinks}/>
+        <div className="fixed top-10 left-0 w-full">
+          <NavBar links={navLinks}/>
+        </div>
         <div className="p-4">
           <Routes>
-            <Route path="/about" element={<h2 className="text-center" />}/>
-            <Route path="/experience" element={<h2 className="text-center" />}/>
-            <Route path="/contact" element={<h2 className="text-center" />}/>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/experience" element={<Experience/>}/>
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
         </div>
       </Router>
-      <h1 className="mb-4">Shun Fujita</h1>
-      <p className="mx-auto flex max-w-[600px] text-justify text-lg">
-        Hello! my name is Shun Fujita, an undergraduate at Northwestern University,
-        passionate about the intersection of Computer Science and Mathematics. I was
-        born and raised in Japan for my whole life (20 years). My broad interests lie
-        in statistics, machine learning, and systems programming and hope to work in 
-        field where I can leverage technology to make an impact.
-      </p>
     </>
   )
 }
