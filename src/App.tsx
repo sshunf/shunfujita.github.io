@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="fixed top-25 left-0 w-full text-lg">
+        <div className="fixed top-25 left-0 w-full text-xl">
           <NavBar links={navLinks}/>
         </div>
         <div className="p-4">
