@@ -9,7 +9,7 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ links }) => {
     return (
-      <nav className="flex justify-center space-x-8 p-4">
+      <nav className="fixed top-0 left-0 right-0 w-full h-25 bg-[#f1dbd3d4] space-x-8 flex items-center justify-center">
         {links.map((link) => (
           <a href={link.path} key={link.name} className="nav-link">
             {link.name}
